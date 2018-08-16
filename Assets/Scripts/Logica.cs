@@ -220,4 +220,9 @@ public class Logica : MonoBehaviour {
         }
         return texto;
     }
+    public void Clear()
+    {
+        enteros.Clear();
+        decimales.Clear();
+    }
 }

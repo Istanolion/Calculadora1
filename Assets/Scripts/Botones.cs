@@ -18,7 +18,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton0()
     {
-        if (linea != "" ||linea.Length<15 )
+        if (linea != "" ||linea.Length<10 )
         {
                 linea = string.Concat(linea, "0");
                 texto.text = linea;
@@ -27,7 +27,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton1()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "1");
             texto.text = linea;
@@ -36,7 +36,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton2()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "2");
             texto.text = linea;
@@ -45,7 +45,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton3()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "3");
             texto.text = linea;
@@ -54,7 +54,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton4()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "4");
             texto.text = linea;
@@ -63,7 +63,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton5()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "5");
             texto.text = linea;
@@ -72,7 +72,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton6()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "6");
             texto.text = linea;
@@ -81,7 +81,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton7()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "7");
             texto.text = linea;
@@ -90,7 +90,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton8()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "8");
             texto.text = linea;
@@ -99,7 +99,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton9()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "9");
             texto.text = linea;
@@ -108,7 +108,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton10()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "A");
             texto.text = linea;
@@ -117,7 +117,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton11()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "B");
             texto.text = linea;
@@ -126,7 +126,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton12()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "C");
             texto.text = linea;
@@ -135,7 +135,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton13()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "D");
             texto.text = linea;
@@ -144,7 +144,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton14()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "E");
             texto.text = linea;
@@ -153,7 +153,7 @@ public class Botones : MonoBehaviour {
     }
     public void Boton15()
     {
-        if (linea.Length < 15)
+        if (linea.Length < 10)
         {
             linea = string.Concat(linea, "F");
             texto.text = linea;
@@ -162,7 +162,7 @@ public class Botones : MonoBehaviour {
     }
     public void BotonPunto()
     {
-        if (linea.Length < 15 && !linea.Contains("."))
+        if (linea.Length < 10 && !linea.Contains("."))
         {
             linea = string.Concat(linea, ".");
             texto.text = linea;
@@ -228,6 +228,7 @@ public class Botones : MonoBehaviour {
     {
         linea = "";
         texto.text = linea;
+        logic.Clear();
     }
     void AgregarNum(int num)
     {
